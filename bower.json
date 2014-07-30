@@ -1,0 +1,15 @@
+{
+  "name": "KPM",
+  "dependencies": {
+    "angular": "latest",
+    "angular-animate": "latest",
+    "angular-cookies": "latest",
+    "angular-resource": "latest",
+    "angular-touch": "latest",
+    "angular-route": "latest",
+	"angular-sanitize": "latest",
+    "bootstrap": "latest",
+    "fontawesome": "latest",
+    "jquery": "latest"
+  }
+}

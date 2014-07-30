@@ -1,0 +1,64 @@
+<!doctype html>
+<!--
+   _____ ___ _    ________   ________  ________   ____  ____  _____   ________________________
+  / ___//   | |  / / ____/  /_  __/ / / / ____/  / __ \/ __ \/  _/ | / / ____/ ____/ ___/ ___/
+  \__ \/ /| | | / / __/      / / / /_/ / __/    / /_/ / /_/ // //  |/ / /   / __/  \__ \\__ \ 
+ ___/ / ___ | |/ / /___     / / / __  / /___   / ____/ _, _// // /|  / /___/ /___ ___/ /__/ / 
+/____/_/  |_|___/_____/    /_/ /_/ /_/_____/  /_/   /_/ |_/___/_/ |_/\____/_____//____/____/  
+                                                                                              
+v1
+by KPM
+7.29.2014
+
+top level index for GH Pages
+
+-->
+<html lang="en" data-ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>STP!</title>
+
+	<!-- Google Font -->
+	<link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/dist/styles/main.css">
+</head>
+<body data-ng-controller="mainController">
+	<nav>
+		<a href="/"><figure class="brand bit">Save The Princess</figure></a>
+		<ul>
+			<li><a href="/instruction">Instructions</a></li>
+			<li><a href="/game">Game</a></li>
+		</ul>
+	</nav>
+	<section class="home" data-ng-show="currentView == 'home'">
+		<div class="bit">
+			Your princess [&nbsp;] has been kidnapped by evil baddies [&nbsp;]. You [&nbsp;] must fight to get her back...
+			<br><br>
+			<a href="/instruction">Instructions</a>
+			<a href="/game">Play</a>
+			<div class="princess"></div>
+			<div class="baddie"></div>
+			<div class="hero"></div>
+		</div>
+		
+	</section>
+	<section class="instruction" data-ng-show="currentView == 'instruction'">
+		<div class="bit">
+			1. Arrow Keys to move<br>
+			2. Spacebar to Shoot
+			<br><br>
+			<a href="/game">Play</a>
+		</div>
+
+	</section>
+	<section class="game" data-ng-show="currentView == 'game'" data-ng-controller="gameController">
+		<canvas id="canvas"></canvas>
+		<section class="bit victory" data-ng-show="victory">VICTORY</section>
+	</section>
+	<!-- Scripts -->
+	<script src="/dist/scripts/vendor.js"></script>
+	<script src="/dist/scripts/app.js"></script>
+</body>
+</html>

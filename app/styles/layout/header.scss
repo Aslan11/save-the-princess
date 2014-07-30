@@ -1,0 +1,42 @@
+body > nav{
+	height: 60px;
+	width: 100%;
+	background: $darkgray;
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: $mediumgray;
+
+	figure{
+		float: left;
+		color: $white;
+		box-sizing: border-box;
+		padding-top: 4px;
+		margin-left: 20px;
+		transition: color .2s;
+
+		&:hover{
+			color: $yellow;
+		}
+	}
+
+	ul{
+		float: right;
+		margin-right: 20px;
+		
+		li{
+			display: inline-block;
+			margin-left: 10px;
+			a{
+				color: $mediumgray;
+				transition: color .2s;
+		
+				&:hover{
+					color: $yellow;
+				}
+			}	
+		}
+	}
+
+
+}

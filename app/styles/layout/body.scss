@@ -1,0 +1,96 @@
+
+html, body {
+	height: 100%; width: 100%;
+}
+
+body {
+	background: $bodygray;
+	position: relative;
+	min-width: 1000px;
+}
+
+section{
+	position: absolute;
+	top: 60px;
+	left: 0;
+	width: 100%;
+	height: calc(100% - 60px);
+}
+
+canvas{
+	background: white;
+	border: 1px solid black;
+	display: block;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.victory{
+	background: black;
+	color: white;
+	width: 800px;
+	height: 600px;
+	text-align: center;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.home, .instruction{
+	>div{
+		width: 480px;
+		height: 280px;
+		color: white;
+		text-align: center;
+		margin: auto;
+		line-height: 40px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+
+		>div{
+			width: 20px;
+			height: 20px;
+			position: absolute;
+
+			&.princess{
+				background: #F5ABC7;
+				top: 9px;
+				left: 274px;
+			}
+
+			&.hero{
+				background: #B9DAFB;
+				top: 88px;
+				left: 184px;
+			}
+
+			&.baddie{
+				background: #E3504B;
+				top: 88px;
+				left: 22px;
+			}
+		}
+
+
+		a{
+			display: block;
+			color: $white;
+			text-transform: uppercase;
+			transition: color .3s;
+
+			&:hover{
+				color: $yellow;
+			}
+		}
+	}
+}
