@@ -6,15 +6,15 @@ var app = angular.module('app', ['ngRoute', 'ngResource', 'ngAnimate', 'ngCookie
 ---------------------------------------------------------------------- */
 app.config(function($httpProvider, $routeProvider, $locationProvider){
 	$routeProvider.
-		when('/', {
+		when('/save-the-princess', {
 			action: 'home'
 		}).
 		
-		when('/instruction', {
+		when('/save-the-princess/instruction', {
 			action: 'instruction'
 		}).
 		
-		when('/game', {
+		when('/save-the-princess/game', {
 			action: 'game'
 		}).
 		

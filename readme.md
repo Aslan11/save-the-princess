@@ -24,7 +24,7 @@ Save The Princess is a simple 2D Platformer/Shooter
 
 With Python
 
-1. Clone Repository
+1. Clone Master Branch of Repository
 2. Use terminal to navigate to repository
 3. Type: python -m SimpleHTTPServer
 4. Open Google Chrome
@@ -33,7 +33,7 @@ With Python
 
 With Node
 
-1. Clone Respository
+1. Clone Master Branch of Respository
 2. Use terminal to navigate to repository
 3. Type: npm install (sudo if needed)
 4. Type: bower install
